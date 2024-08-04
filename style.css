@@ -1,5 +1,22 @@
 /* Responsive CSS file styles defined for smaller width devices */
 /* CSS for tablet devices */
+.hero {
+	animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+  }
+
+  .my-card {
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .my-card:hover {
+	transform: scale(1.1);
+  }
+  
 @media screen and (min-width: 576px) and (max-width: 820px) { 
 	.logo { 
 		padding: 0 3rem; 
