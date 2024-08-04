@@ -1,3 +1,21 @@
+.hero {
+	animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+  }
+
+  .my-card {
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .my-card:hover {
+	transform: scale(1.1);
+  }
+
+
 /* Styles defined for the desktop or the bigger screen devices*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 
@@ -131,52 +149,55 @@ body {
 } 
 
 /* Services section styles */
-.services { 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-	flex-direction: column; 
-	margin: 0; 
-	padding: 0; 
-} 
-
-.my-row { 
-	display: flex; 
-	align-items: center; 
-	justify-content: space-between; 
-	margin: 2rem 0; 
-} 
-
-.my-row .my-col { 
-	text-align: center; 
-	width: 30%; 
-} 
-
-.my-card { 
-	text-align: center; 
-	display: flex; 
-	flex-direction: column; 
-	align-items: center; 
-	justify-content: center; 
-	border-radius: 20px; 
-	background-image: linear-gradient(#37c1d6, #2a8f9e,#1c6071); 
-	padding: 1rem; 
-} 
-
-.icon { 
-	height: 100px; 
-	width: 100px; 
-	border-radius: 50%; 
-	background-color: #363D73; 
-	display: flex; 
-	align-items: center; 
-	justify-content: center; 
-} 
-
-.icon svg { 
-	font-size: 30px; 
-	color: #fff; 
-} 
+.services {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .my-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem 0;
+  }
+  
+  .my-row .my-col {
+	text-align: center;
+	width: 30%;
+	/* Add margin to create space between icons */
+	margin: 0 1rem; /* Adjust the margin value as needed */
+  }
+  
+  .my-card {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	background-image: linear-gradient(#37c1d6, #2a8f9e, #1c6071);
+	padding: 1rem;
+  }
+  
+  .icon {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #363D73;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .icon svg {
+	font-size: 30px;
+	color: #fff;
+  }
+  
 
 /* Contact section styles */
 .contact { 
